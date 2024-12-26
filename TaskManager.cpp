@@ -5,7 +5,7 @@
 
 using json = nlohmann::json;
 
-TaskManager::TaskManager() {
+TaskManager::TaskManager(const std::string& fileName) : fileName(fileName) {
     loadFromFile();
 }
 

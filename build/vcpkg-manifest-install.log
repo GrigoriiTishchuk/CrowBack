@@ -1,12 +1,65 @@
 Detecting compiler hash for triplet x64-windows...
 Compiler found: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe
-All requested packages are currently installed.
-Total install time: 1.9 us
+The following packages will be built and installed:
+    gtest:x64-windows@1.15.2
+Restored 0 package(s) from C:\Users\tishc\AppData\Local\vcpkg\archives in 192 us. Use --debug to see more details.
+Installing 1/1 gtest:x64-windows@1.15.2...
+Building gtest:x64-windows@1.15.2...
+Downloading google-googletest-v1.15.2.tar.gz
+Successfully downloaded google-googletest-v1.15.2.tar.gz.
+-- Extracting source C:/vcpg/vcpkg/downloads/google-googletest-v1.15.2.tar.gz
+-- Applying patch 001-fix-UWP-death-test.patch
+-- Applying patch clang-tidy-no-lint.patch
+-- Applying patch fix-main-lib-path.patch
+-- Using source at C:/vcpg/vcpkg/buildtrees/gtest/src/v1.15.2-41f5afb119.clean
+-- Found external ninja('1.10.2').
+-- Configuring x64-windows
+-- Building x64-windows-dbg
+-- Building x64-windows-rel
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest.cc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest_main.cc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest-all.cc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest-assertion-result.cc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest-death-test.cc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest-filepath.cc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest-internal-inl.h
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest-matchers.cc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest-port.cc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest-printers.cc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest-test-part.cc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/src/gtest-typed-test.cc
+-- Fixing pkgconfig file: C:/vcpg/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gmock.pc
+-- Fixing pkgconfig file: C:/vcpg/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gmock_main.pc
+-- Fixing pkgconfig file: C:/vcpg/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gtest.pc
+-- Fixing pkgconfig file: C:/vcpg/vcpkg/packages/gtest_x64-windows/lib/pkgconfig/gtest_main.pc
+-- Using cached msys2-mingw-w64-x86_64-pkgconf-1~2.3.0-1-any.pkg.tar.zst.
+-- Using cached msys2-msys2-runtime-3.5.4-2-x86_64.pkg.tar.zst.
+-- Using msys root at C:/vcpg/vcpkg/downloads/tools/msys2/21caed2f81ec917b
+-- Fixing pkgconfig file: C:/vcpg/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gmock.pc
+-- Fixing pkgconfig file: C:/vcpg/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gmock_main.pc
+-- Fixing pkgconfig file: C:/vcpg/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gtest.pc
+-- Fixing pkgconfig file: C:/vcpg/vcpkg/packages/gtest_x64-windows/debug/lib/pkgconfig/gtest_main.pc
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/share/gtest/copyright
+-- Installing: C:/vcpg/vcpkg/packages/gtest_x64-windows/share/gtest/usage
+-- Performing post-build validation
+Stored binaries in 1 destinations in 4.7 s.
+Elapsed time to handle gtest:x64-windows: 27 s
+gtest:x64-windows package ABI: b745c1117071fde0fa3a0ce09776516fec8301dc11c0c86421d7e305188f6810
+Total install time: 27 s
 crow provides CMake targets:
 
   # this is heuristically generated, and may not be correct
   find_package(Crow CONFIG REQUIRED)
   target_link_libraries(main PRIVATE Crow::Crow asio::asio)
+
+The package gtest is compatible with built-in CMake targets:
+
+    enable_testing()
+    
+    find_package(GTest CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE GTest::gtest GTest::gtest_main GTest::gmock GTest::gmock_main)
+    
+    add_test(AllTestsInMain main)
 
 The package nlohmann-json provides CMake targets:
 

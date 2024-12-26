@@ -11,7 +11,11 @@ class TaskManager {
     const std::string fileName = "tasks.json";
 
 public:
-    TaskManager();
+    /**
+     * @brief Constructs a TaskManager with a specified file name.
+     * @param fileName Name of the file to save/load tasks
+     */
+    TaskManager(const std::string& fileName);
     ~TaskManager();
 
     Task addTask(const std::string& description);
