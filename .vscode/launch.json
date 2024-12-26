@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "C++ Launch",
+        "type": "cppvsdbg",
+        "request": "launch",
+        "program": "C:/crowbackend/build/CrowBackend",  // Path to your executable, change this
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "C:/crowbackend",// Path of your root, change this
+        "environment": [],
+        "console": "integratedTerminal",
+        "preLaunchTask": "build"
+      }
+    ]
+  }
+  

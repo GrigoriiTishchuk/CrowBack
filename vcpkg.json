@@ -1,0 +1,9 @@
+{
+    "dependencies": [
+      "nlohmann-json",
+      "crow",
+      "vcpkg-cmake",
+      "vcpkg-cmake-config"
+    ]
+  }
+  
