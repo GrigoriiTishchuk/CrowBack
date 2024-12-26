@@ -1,7 +1,7 @@
 Detecting compiler hash for triplet x64-windows...
 Compiler found: C:/Program Files (x86)/Microsoft Visual Studio/2019/BuildTools/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/cl.exe
 All requested packages are currently installed.
-Total install time: 1.4 us
+Total install time: 1.9 us
 crow provides CMake targets:
 
   # this is heuristically generated, and may not be correct
