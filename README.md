@@ -32,7 +32,7 @@ CrowBackend is a C++ project that uses the Crow web framework and nlohmann::json
     cd vcpkg
     ./bootstrap-vcpkg.bat
     ./vcpkg integrate install
-    ./vcpkg install crow nlohmann-json
+    ./vcpkg install 
     ```
 
 3. **Configure and build the project:**
@@ -40,7 +40,7 @@ CrowBackend is a C++ project that uses the Crow web framework and nlohmann::json
     ```sh
     mkdir build
     cd build
-    cmake -DCMAKE_TOOLCHAIN_FILE=C:/path/to/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+    cmake ..
     cmake --build . --config Debug
     ```
 
@@ -51,6 +51,7 @@ CrowBackend is a C++ project that uses the Crow web framework and nlohmann::json
     ```sh
     ./build/CrowBackend
     ```
+    Or launch manually by pressing on `CrowBackend.exe
 
 2. **API Endpoints:**
 
@@ -111,4 +112,4 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is not licensed. See the LICENSE file for details.
