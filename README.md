@@ -60,6 +60,23 @@ CrowBackend is a C++ project that uses the Crow web framework and nlohmann::json
     - `PUT /updateTask`: Updates the completion status of a task
     - `DELETE /deleteTask`: Deletes a task by its ID
 
+## Troubleshooting Build Issues
+
+1. **Delete CMake cache and files in the build folder:**
+    ```sh
+    Remove-Item -Recurse -Force CMakeCache.txt, CMakeFiles
+    ```
+2. **Reconfigure the project:**
+    ```sh
+    cmake ..
+    ```
+3. **Build the project:**
+    ```sh
+    cmake --build . --config Debug
+    ```
+4. **Locate the executable in the Debug folder (e.g., CrowBackend.exe) and launch it locally on localhost:18080.**
+
+
 ## Example
 
 Here is an example of how to use the API:
