@@ -1,2 +1,2 @@
-vcpkg_installed/
-build/
+vcpkg_installed
+build
