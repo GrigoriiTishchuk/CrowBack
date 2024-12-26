@@ -40,3 +40,12 @@ Abi: 247f3b68ac164c005d61f5092890c8754410230a76b2e7e65477cdb3ec5e5c59
 Description: JSON for Modern C++
 Status: install ok installed
 
+Package: gtest
+Version: 1.15.2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: b745c1117071fde0fa3a0ce09776516fec8301dc11c0c86421d7e305188f6810
+Description: Google Testing and Mocking Framework
+Status: install ok installed
+

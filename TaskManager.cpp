@@ -5,10 +5,15 @@
 
 using json = nlohmann::json;
 
+// Definition of the default constructor
+TaskManager::TaskManager() : fileName("tasks.json") {
+    loadFromFile();
+}
+// Definition of the parameterized constructor
 TaskManager::TaskManager(const std::string& fileName) : fileName(fileName) {
     loadFromFile();
 }
-
+// Destructor
 TaskManager::~TaskManager() {
     saveToFile();
 }

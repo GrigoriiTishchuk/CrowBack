@@ -12,6 +12,10 @@ class TaskManager {
 
 public:
     /**
+     * @brief Default constructor.
+     */
+    TaskManager();
+    /**
      * @brief Constructs a TaskManager with a specified file name.
      * @param fileName Name of the file to save/load tasks
      */
