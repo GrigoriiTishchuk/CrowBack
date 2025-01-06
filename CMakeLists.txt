@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 project(CrowBackend)
+project(TaskManagerTests)
 set(CMAKE_CXX_STANDARD 17)
 # Path to vcpkg.cmake
 set(CMAKE_TOOLCHAIN_FILE "C:/vcpg/vcpkg/scripts/buildsystems/vcpkg.cmake") 
@@ -9,6 +10,7 @@ set(CMAKE_PREFIX_PATH "C:/crowbackend/vcpkg_installed/x64-windows")
 find_package(Crow CONFIG REQUIRED)
 find_package(nlohmann_json CONFIG REQUIRED)
 find_package(GTest CONFIG REQUIRED)
+enable_testing()
 add_definitions(-D_WIN32_WINNT=0x0601)
 add_executable(CrowBackend main.cpp Task.cpp TaskManager.cpp)
 # Path to include directory of vcpkg_installed on your machine, change it accordingly

@@ -7,6 +7,7 @@ C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeCompilerIdDetection.cmake
+C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDependentOption.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake
 C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompiler.cmake
@@ -117,6 +118,7 @@ C:/crowbackend/build/CMakeFiles/3.31.3/CMakeCCompiler.cmake
 C:/crowbackend/build/CMakeFiles/3.31.3/CMakeCXXCompiler.cmake
 C:/crowbackend/build/CMakeFiles/3.31.3/CMakeRCCompiler.cmake
 C:/crowbackend/build/CMakeFiles/3.31.3/CMakeSystem.cmake
+C:/crowbackend/vcpkg.json
 C:/crowbackend/vcpkg_installed/x64-windows/share/crow/CrowConfig.cmake
 C:/crowbackend/vcpkg_installed/x64-windows/share/crow/CrowTargets.cmake
 C:/crowbackend/vcpkg_installed/x64-windows/share/crow/Findasio.cmake
@@ -128,3 +130,4 @@ C:/crowbackend/vcpkg_installed/x64-windows/share/gtest/GTestTargets.cmake
 C:/crowbackend/vcpkg_installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfig.cmake
 C:/crowbackend/vcpkg_installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfigVersion.cmake
 C:/crowbackend/vcpkg_installed/x64-windows/share/nlohmann_json/nlohmann_jsonTargets.cmake
+C:/vcpg/vcpkg/scripts/buildsystems/vcpkg.cmake

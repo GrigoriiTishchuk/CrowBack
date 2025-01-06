@@ -2,6 +2,13 @@
 #include <gtest/gtest.h>
 #include <fstream>
 
+/*
+CURRENTLY TESTS DO NOT WORK: EXE FILE IS NOT COMPILED CORRECTLY.
+UNDER DEVELOPMENT CURRENTLY
+*/
+
+
+
 // Helper function to remove the test file after each test
 void removeTestFile(const std::string& fileName) {
     std::remove(fileName.c_str());
@@ -14,12 +21,12 @@ protected:
     TaskManager taskManager;
 
     TaskManagerTest() : taskManager(testFileName) {}
-
+// Constructor that initializes the TaskManager with the test file name
     void SetUp() override {
         // Remove the test file before each test
         removeTestFile(testFileName);
     }
-
+// Destructor that removes the test file after each test
     void TearDown() override {
         // Remove the test file after each test
         removeTestFile(testFileName);
@@ -62,6 +69,15 @@ TEST_F(TaskManagerTest, LoadFromFile) {
     ASSERT_EQ(tasks[1].getDescription(), "Test Task");
 }
 
+/**
+ * @brief Main entry point for the test executable
+ *
+ * Initializes the Google Test framework and runs all tests.
+ *
+ * @param argc The number of command line arguments
+ * @param argv The command line arguments
+ * @return The exit status of the test executable
+ */
 int main(int argc, char **argv) {
     ::testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();

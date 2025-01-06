@@ -1,4 +1,5 @@
 C:/crowbackend/build/CMakeFiles/CrowBackend.dir
 C:/crowbackend/build/CMakeFiles/TaskManagerTests.dir
+C:/crowbackend/build/CMakeFiles/RUN_TESTS.dir
 C:/crowbackend/build/CMakeFiles/ALL_BUILD.dir
 C:/crowbackend/build/CMakeFiles/ZERO_CHECK.dir

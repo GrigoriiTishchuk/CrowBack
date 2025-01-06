@@ -5,14 +5,26 @@
         "name": "C++ Launch",
         "type": "cppvsdbg",
         "request": "launch",
-        "program": "C:/crowbackend/build/CrowBackend",  // Path to your executable, change this
+        "program": "C:/crowbackend/build/Debug/CrowBackend.exe",  // Path to your executable, change this
         "args": [],
         "stopAtEntry": false,
         "cwd": "C:/crowbackend",// Path of your root, change this
         "environment": [],
         "console": "integratedTerminal",
         "preLaunchTask": "build"
-      }
+      },
+      {
+        "name": "Run Tests",
+        "type": "cppvsdbg",
+        "request": "launch",
+        "program": "C:/crowbackend/build/Debug/TaskManagerTests.exe",  // Path to your test executable
+        "args": [],
+        "stopAtEntry": true,
+        "cwd": "C:/crowbackend",  // Path of your root, change this
+        "environment": [],
+        "console": "integratedTerminal",
+        "preLaunchTask": "build"
+    }
     ]
   }
   
